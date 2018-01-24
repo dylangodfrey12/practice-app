@@ -10,7 +10,6 @@ module PracticeApp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-config.web_console.whitelisted_ips = ['10.240.1.134/16','71.121.136.202/16']
  
 
     # Settings in config/environments/* take precedence over those specified here.
