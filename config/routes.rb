@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   get 'projects', to:'pages#projects'
   get 'about', to:'pages#about'
   get 'contact', to:'pages#contact'
-  get 'services', to:'pages#services'
-  
+
    get 'thankyou', to:'pages#thankyou'
  resources :emails
 end

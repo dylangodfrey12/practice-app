@@ -130,3 +130,33 @@ input, textarea, select, .uneditable-input {
 input {
   height: auto !important;
 }
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+ 
+  .form-control {
+    color: red;
+  }
+}
+
+
+
+.shift {
+  float: right;
+  display: block;
+  background-color:hsla(0, 0%, 71%,.2);
+  
+}
+.shift-left {
+  float: left;
+   display:block;
+     background-color:hsla(0, 0%, 71%,.2);
+
+}
+

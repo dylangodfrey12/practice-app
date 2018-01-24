@@ -1,5 +1,6 @@
 class EmailsController < ApplicationController
   def index
+    redirect_to new_email_url
   end
 
   def new
