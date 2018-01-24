@@ -11,7 +11,7 @@ class EmailsController < ApplicationController
     @email = Email.new(email_params)
     if @email.save
       EmailMailer.new_email(@email).deliver_now
-      flash[:info] = "Thank you for the email, we will get back to you shortly"
+      flash[:info] = "Thank you for the email, we will get back to you shortly!!!"
       redirect_to root_url
     else
       render 'new'
