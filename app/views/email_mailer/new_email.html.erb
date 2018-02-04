@@ -1,7 +1,9 @@
-<h1>Sample App</h1>
+<h2><%= @email.name %></h2>
 
 
 <p>
-Welcome to the Sample App! Click on the link below to activate your account:
+Name:<%= @email.name %>
 </p>
-<%= @email.name %>
+<h4>Message: <%= @email.content %> </h4>
+<h3>Email: <%= @email.email %></h3>
+  <h3>Number: <%= @email.phone %></h3>
