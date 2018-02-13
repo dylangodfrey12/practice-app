@@ -15,6 +15,130 @@
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap";
+//side menu and pages
+.side-navigation {
+  
+  text-align:right;
+  background-image: asset-url('navbg.jpeg');
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  margin-left: 0;
+  padding: 50px;
+}
+.styling {
+      font-family: Helvetica, Lora,serif;
+    font-size: 20px;
+    background: #fff;
+    color: #333232;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+.fixed-container {
+  display: block;
+  width: 75%;
+  float: right;
+  height: 100%;
+  margin-right: 0;
+  padding: 5px 10px;
+  
+}
+
+.portrait {
+  display: inline;
+  width: 110px;
+  height: 110px;
+  border-radius: 55px;
+  border: 3px white solid;
+}
+.about-img {
+  display: block;
+  float: left;
+  width: 50%;
+  border-radius: 98% ;
+  border: 3px gray solid;
+  
+}
+ul {
+    list-style-type:none;
+}
+#color-fade  {
+    color: white; 
+     text-decoration: none;
+   
+    
+    -webkit-transition-property:color; 
+    -webkit-transition-duration: .5s, .5s; 
+    -webkit-transition-timing-function: linear, ease-in;
+}
+
+#color-fade:hover {
+    color: dodgerblue;
+}
+.icon {
+  background: #007bb5;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+.icon:hover {
+  background: #007bb5;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  opacity: 0.9;
+  border: 2px solid white;
+}
+//PROJECTS CSS//
+.container {
+    position: relative;
+    width: 70%;
+   margin-right: 0px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+.container:hover .image {
+  opacity: 0.5;
+}
+
+.container:hover .middle {
+  opacity: 0.8;
+}
+
+.text {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.portfolio-text {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+
 
 #home-jumbo {
   
